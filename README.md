@@ -15,9 +15,12 @@ next you need a mongodb database you can either
 2. Host one on your own computer. [Mongodb server installation](https://www.mongodb.com/docs/manual/installation/)
 
 after this create a .env.development.local file to the root of the project with the content:
-`"VITE_MONGO_URL=Mongodb database url"`
 
-For a local server without authentication it should look something like this: `VITE_MONGO_URL=mongodb://localhost:27017/NiceNewsNetwork`
+`VITE_MONGO_URL="Mongodb database url"`
+
+For a local server without authentication it should look something like this:
+
+`VITE_MONGO_URL=mongodb://localhost:27017/NiceNewsNetwork`
 
 ### Developemnt Server
 

@@ -174,6 +174,9 @@
     :global(p){
         font-size: 18px;
     }
+    :global(img){
+        width: 100%;
+    }
 
     .toolbar{
         display: flex;

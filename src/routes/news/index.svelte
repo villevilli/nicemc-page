@@ -29,11 +29,11 @@
         createNew = true
     }
 
-    function createArticle({ detail }){
+    async function createArticle({ detail }){
         
         let body = JSON.stringify(detail)
 
-        fetch(`/api/createArticle`, {
+        await fetch(`/api/createArticle`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

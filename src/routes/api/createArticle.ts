@@ -14,7 +14,7 @@ import { Article } from "$lib/database";
 export async function post({ request }) {
     
     let body = await request.json()
-    const newArticle = new Article(body).save()
+    const newArticle = await new Article(body).save()
 
     if (newArticle) {
         return {
