@@ -1,0 +1,33 @@
+{
+  "name": "nicenewsnetwork",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "package": "svelte-kit package",
+    "preview": "svelte-kit preview --port 8080 --host",
+    "prepare": "svelte-kit sync",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/kit": "next",
+    "@types/remarkable": "^1.7.5",
+    "@types/simplemde": "^1.11.8",
+    "svelte": "^3.44.0",
+    "svelte-check": "^2.2.6",
+    "svelte-preprocess": "^4.10.1",
+    "tslib": "^2.3.1",
+    "typescript": "~4.6.2"
+  },
+  "type": "module",
+  "dependencies": {
+    "@sveltejs/adapter-node": "^1.0.0-next.73",
+    "easymde": "^2.16.1",
+    "luxon": "^2.3.2",
+    "mongoose": "^6.3.0",
+    "remarkable": "^2.0.1",
+    "sass": "^1.50.1"
+  }
+}
