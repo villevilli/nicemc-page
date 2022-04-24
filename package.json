@@ -13,6 +13,7 @@
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
+    "@types/bcrypt": "^5.0.0",
     "@types/remarkable": "^1.7.5",
     "@types/simplemde": "^1.11.8",
     "svelte": "^3.44.0",
@@ -24,7 +25,9 @@
   "type": "module",
   "dependencies": {
     "@sveltejs/adapter-node": "^1.0.0-next.73",
+    "bcrypt": "^5.0.1",
     "easymde": "^2.16.1",
+    "highlight.js": "^11.5.1",
     "luxon": "^2.3.2",
     "mongoose": "^6.3.0",
     "remarkable": "^2.0.1",

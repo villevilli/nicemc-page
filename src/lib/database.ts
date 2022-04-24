@@ -12,7 +12,7 @@ mongoose.connect(dbUrl, {
 const articleSchema = new mongoose.Schema({
     address: { type: String, unique: true },
     title: { type: String, index: true },
-    articles: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User'}],
+    authors: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User'}],
     article: String,
     description: String,
     public: { type: Boolean, default: false},
@@ -23,15 +23,15 @@ const articleSchema = new mongoose.Schema({
 
 const userSchema = new mongoose.Schema({
     publicName: String,
-    username: String,
+    username: { type: String, unique:true},
     password: String,
     email: String,
     permissions: {
-        administrator: Boolean,
-        publishArticles: Boolean,
-        createArticles: Boolean,
-        publishAllArticles: Boolean,
-        modifyAllArticles: Boolean,
+        administrator: { type:Boolean, default:false},
+        publishArticles: { type:Boolean, default:false},
+        createArticles: { type:Boolean, default:false},
+        publishAllArticles: { type:Boolean, default:false},
+        modifyAllArticles: { type:Boolean, default:false},
     },
     articles: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Article'}]
 })
@@ -39,7 +39,7 @@ const userSchema = new mongoose.Schema({
 const tokenSchema = new mongoose.Schema({
     token: String,
     expiry: {type: Date, default: DateTime.now().plus({ days: 7 })},
-    user: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User'}],
+    user: { type: mongoose.Schema.Types.ObjectId, ref: 'User'},
 })
 
 export const Article = mongoose.model('Article', articleSchema)
