@@ -16,7 +16,7 @@
     "@types/bcrypt": "^5.0.0",
     "@types/remarkable": "^1.7.5",
     "@types/simplemde": "^1.11.8",
-    "svelte": "^3.44.0",
+    "svelte": "^3.49.0",
     "svelte-check": "^2.2.6",
     "svelte-preprocess": "^4.10.1",
     "tslib": "^2.3.1",
