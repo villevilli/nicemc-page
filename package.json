@@ -28,7 +28,7 @@
     "bcrypt": "^5.0.1",
     "easymde": "^2.16.1",
     "highlight.js": "^11.5.1",
-    "luxon": "^2.3.2",
+    "luxon": "^2.5.2",
     "mongoose": "^6.4.6",
     "remarkable": "^2.0.1",
     "sass": "^1.50.1"
