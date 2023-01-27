@@ -1,4 +1,4 @@
-# Nicemc homepage and the NNN blog/news things
+# Nicemc blog thingy
 just a project for a couple friend
 
 ### https://nicemc.fi
