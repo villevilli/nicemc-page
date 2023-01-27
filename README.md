@@ -1,6 +1,7 @@
 # Nicemc homepage and the NNN blog/news things
 just a project for a couple friend
 
+### https://nicemc.fi
 
 ## Developing
 
